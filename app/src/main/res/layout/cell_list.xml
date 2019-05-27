@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Ignacio Galliano
+  ~  */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cellList"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:id="@+id/imageCell"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight=".4"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTitleCell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textDescriptionCell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="La noticia no trae descripcion La noticia no trae descripcion La noticia no trae descripcion"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textDateCell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"
+                android:text="25/11/2019"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_weight=".1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_right"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
+
+</LinearLayout>
